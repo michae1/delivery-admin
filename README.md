@@ -27,18 +27,23 @@ Sample project.
 This project is just backend API to make it possible to work with web frontend and mobile. So you can test it with simple curl
 
 * To get full orders list:
+
 `curl -X GET http://localhost:3000/orders`
 
 * To get orders list filtered by companyName:
+
 `curl -X GET http://localhost:3000/orders?companyName=SuperTrader`
 
 * To get orders list filtered by customerAdress:
+
 `curl -X GET http://localhost:3000/orders?customerAdress=Reeperbahn 153`
 
 * To get orders stats:
+
 `curl -X GET http://localhost:3000/orders/stats`
 
 * To delete orders by orderId:
+
 `curl -X DELETE localhost:3000/orders/001`
 
 ### Tests ###
