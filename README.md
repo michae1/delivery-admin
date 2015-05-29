@@ -1,6 +1,6 @@
 # Delivery admin API #
 
-Sample project.
+Api to manage orders delivery.
 
 ### Set up ###
 
