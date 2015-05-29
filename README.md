@@ -4,6 +4,8 @@ Sample project.
 
 ### Set up ###
 
+* Clone with `git clone https://bitbucket.org/michae1/delivery-admin.git`
+
 * This project requires node.js installed on your system. For example, on ubuntu you can run
 `sudo apt-get install nodejs`
 
