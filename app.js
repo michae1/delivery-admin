@@ -9,12 +9,9 @@ server.use(restify.queryParser());
 
 require('./api/orders')(server);
 
-
-
 server.listen(3000, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
 
-
-// for tests
+// for tests needs
 module.exports = server;

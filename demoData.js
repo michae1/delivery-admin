@@ -16,11 +16,17 @@ var _orders = [
 function Orders( args ) {}
 
 Orders.prototype = {
+    
     orders: [],
+    
     indexes: {},
+    
     indexableFields: ["orderId","companyName", "customerAdress"],
+    
     statsData: {},
+
     buildIndex: function(){
+        /* Builds index data after run or data change, to make it faster to filter lists */
         var _this = this;
         _this.indexableFields.forEach(function(key){
 
@@ -37,6 +43,7 @@ Orders.prototype = {
     },
 
     buildStats: function(){
+        /* Builds stats data after run or data change, to make it faster to load */
         var _this = this;
             _this.statsData = {};
             _this.orders.forEach(function(o, i){
@@ -86,7 +93,7 @@ Orders.prototype = {
             if (o.orderId == id)
                 _this.orders.splice(i,1);
         });
-        // rebuild index
+        // rebuild index & stats
         this.buildIndex();
         this.buildStats();
 
