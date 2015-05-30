@@ -50,5 +50,5 @@ This project is just backend API to make it possible to work with web frontend a
 
 ### Tests ###
 
-* There are some unit and integration tests, to run:
+* To run unit and integration tests:
 `grunt test`
